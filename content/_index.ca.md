@@ -1,10 +1,10 @@
 +++
 title = "Publicacions recents"
 sort_by = "date"
+paginate_by = 10
 
 [extra]
-header = {title = "Hola! Soc tabi~", img = "img/main.webp", img_alt = "Óscar Fernández, l'autor de tabi" }
-section_path = "blog/_index.ca.md"
+header = {title = "Hola! Soc Gigajobless", img = "img/main.png", img_alt = "Óscar Fernández, l'autor de tabi" }
 max_posts = 4
 projects_path = "projects/_index.ca.md"
 max_projects = 3

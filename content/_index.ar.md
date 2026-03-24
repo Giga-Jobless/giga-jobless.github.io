@@ -2,10 +2,10 @@
 title = "أخر التدوينات"
 sort_by = "date"
 template = "section.html"
+paginate_by = 10
 
 [extra]
-header = {title = "اهلاً انا تابي~", img = "img/main.webp", img_alt = "أوسكار فرنانديز, كاتب السمة" }
-section_path = "blog/_index.ar.md"
+header = {title = "اهلاً انا تابي~", img = "img/main.png", img_alt = "أوسكار فرنانديز, كاتب السمة" }
 max_posts = 4
 projects_path = "projects/_index.ar.md"
 max_projects = 3

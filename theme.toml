@@ -1,10 +1,10 @@
-name = "tabi"
-description = "tabi is an accessible Zola theme with search, multi-language support, optional JavaScript, a perfect Lighthouse score, and comprehensive documentation. Crafted for personal websites and blogs."
+name = "Giga Jobless"
+description = "rizz"
 license = "MIT"
-homepage = "https://github.com/welpo/tabi"
+homepage = "https://github.com/Giga-Jobless"
 
 # The minimum version of Zola required
-min_version = "0.17.0"
+min_version = "0.22.0"
 
 # An optional live demo URL
 demo = "https://welpo.github.io/tabi"
@@ -225,7 +225,7 @@ invert_title_order = false
 
 # Add an emoji here to use it as favicon.
 # Compatibility: https://caniuse.com/link-icon-svg
-# favicon_emoji = "🌱"
+# favicon_emoji = "🗿"
 
 # Path to the fallback image for social media cards (the preview image shown when sharing a link on WhatsApp, LinkedIn…).
 # Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
