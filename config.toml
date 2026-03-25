@@ -76,13 +76,6 @@ build_search_index = false
 # Check out the documentation (or the comments below) to learn how to customise tabi:
 # https://welpo.github.io/tabi/blog/mastering-tabi-settings/
 
-# Search index format.
-# For Zola 0.17.X users only.
-# This MUST MATCH the setting in [search].index_format.
-# Example: If [search].index_format is "elasticlunr_javascript", set:
-# index_format = "elasticlunr_javascript"
-# index_format = ""
-
 # Use sans-serif font everywhere.
 # By default, the serif font is only used in articles.
 override_serif_with_sans = false
@@ -133,7 +126,7 @@ remote_repository_url = "https://github.com/welpo/tabi"
 # Accepted values are "github", "gitlab", "gitea", and "codeberg".
 remote_repository_git_platform = "auto"  # Defaults to "auto".
 # Branch in the repo hosting the Zola site.
-remote_repository_branch = "main"  # Defaults to "main".
+remote_repository_branch = "master"  # Defaults to "main".
 # Show a link to the commit history of updated posts, right next to the last updated date.
 # Can be set at page or section levels, following the hierarchy: page > section > config. See: https://welpo.github.io/tabi/blog/mastering-tabi-settings/#settings-hierarchy
 show_remote_changes = true  # Defaults to true.
@@ -289,6 +282,9 @@ social_media_card = "index.jpg"
 
 menu = [
     #{ name = "blog", url = "blog", trailing_slash = true },
+    { name = "dean", url = "dean", trailing_slash = true },
+    { name = "mink", url = "mink", trailing_slash = true },
+    { name = "cidra", url = "cidra", trailing_slash = true },
     #{ name = "archive", url = "archive", trailing_slash = true },
     #{ name = "tags", url = "tags", trailing_slash = true },
     #{ name = "projects", url = "projects", trailing_slash = true },

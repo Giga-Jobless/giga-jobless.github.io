@@ -1,7 +1,6 @@
 +++
-title = "Archive"
+title = "Dean"
 template = "archive.html"
 
 [extra]
-social_media_card = ""
 +++
