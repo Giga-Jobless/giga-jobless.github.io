@@ -22,14 +22,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: metadate thing
-        id: pages
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build site
+        run: pnpm run build
+
+      - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Build Zola site
-        uses: getzola/github-pages@066755243e69f508fd1a74739fbf1a65f656c790
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          zola_version: v0.22.0
+          path: dist
 
   deploy:
     needs: build
@@ -37,6 +52,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
